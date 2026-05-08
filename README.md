@@ -22,9 +22,9 @@ Controller Service Modelを分けて保守性を意識
 
 【構成】
 src
- ├─ main
- │   ├─ java/com/example/magic
- │   │   ├─ controller
- │   │   └─ service
- │   └─ resources/templates
- │       └─ result.html
+ └main
+    └java/com/example/magic
+       └controller
+       └service
+   └resources/templates
+       └result.html
