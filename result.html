@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>魔法検索</title>
+</head>
+
+<body>
+
+<h1>どんな魔法をお探しですか？</h1>
+
+<div th:if="${result}">
+
+    <p th:utext="'おすすめ魔法: ' + ${result}"></p>
+
+</div>
+
+<form action="/magic" method="get">
+
+    <input type="text"
+           name="input"
+           placeholder="例: 掃除したい">
+
+    <br>
+
+    <button type="submit">
+        魔法を探す
+    </button>
+
+</form>
+
+</body>
+</html>
