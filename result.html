@@ -3,7 +3,22 @@
 
 <head>
 <meta charset="UTF-8">
-<title>魔法検索</title>
+<title>民間魔法検索</title>
+<style>
+.tag {
+    cursor: pointer;
+    color: blue;
+
+    text-decoration: underline;
+
+    margin: 5px;
+    font-weight: bold;
+}
+
+.tag:hover {
+    color: darkblue;
+}
+</style>
 </head>
 
 <body>
@@ -12,7 +27,7 @@
 
 <div th:if="${result}">
 
-    <p th:utext="'おすすめ魔法: ' + ${result}"></p>
+    <p th:utext="'おすすめの民間魔法: ' + ${result}"></p>
 
 </div>
 
@@ -20,9 +35,28 @@
 
     <input type="text"
            name="input"
+		   id="inputBox"
            placeholder="例: 掃除したい">
+		   <br><br>
+	<span class="tag" onclick="setSample('おいしい大豆')">#おいしい大豆</span>
+	<span class="tag" onclick="setSample('花')">#花</span>
+	<span class="tag" onclick="setSample('冷たい水')">#冷たい水</span>
+    <span class="tag" onclick="setSample('アイディアがわかない')">#アイディアがわかない</span>
+	<span class="tag" onclick="setSample('リンゴ味のハイチュウ')">#リンゴ味のハイチュウ</span>
+	<br><br>
+	<span class="tag" onclick="setSample('キーケンパ')">#キーケンパ</span>
+	<span class="tag" onclick="setSample('血糖値')">#血糖値</span>
+	<span class="tag" onclick="setSample('向こう岸に渡りたい')">#向こう岸に渡りたい</span>
+	<span class="tag" onclick="setSample('ヒーロー')">#ヒーロー</span>
+	<span class="tag" onclick="setSample('自由研究')">#自由研究</span>
+	<span class="tag" onclick="setSample('ウィンドウォッシャー')">#ウィンドウォッシャー</span>
+	<span class="tag" onclick="setSample('体を鍛える')">#体を鍛える</span>
+	<script>
+	function setSample(value) {
+	    document.getElementById("inputBox").value = value;}
+	</script>	  
 
-    <br>
+    <br><br>
 
     <button type="submit">
         魔法を探す
