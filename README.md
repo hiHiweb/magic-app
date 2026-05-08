@@ -24,4 +24,4 @@ Controller Service Modelを分けて保守性を意識
 src-main-java/com/example/magic-controller
                                -service
                                
-        - [result.html](src/main/resources/templates/result.html)
+src/main/resources/templates/result.html
