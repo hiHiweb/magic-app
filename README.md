@@ -18,8 +18,7 @@
 キーワード入力による魔法の提案
 
 【工夫した点】
-<br><br>Controller Service Modelを分けて保守性を意識
-<br><br>利用者さんの検索にヒットしやすい様にListで記入
+<br><br>Controller Service Modelを分けて保守性を意識<br><br>利用者さんの検索にヒットしやすい様にListで記入
 
 【構成】
 src-main-java/com/example/magic-controller
