@@ -5,8 +5,7 @@
 
 例：
 -「掃除」→カビを消滅させる魔法
-
-  -「花」→ 花畑を出す魔法
+<br>-「花」→ 花畑を出す魔法
 
 【使用技術】
 - Java
@@ -20,8 +19,7 @@
 
 【工夫した点】
 Controller Service Modelを分けて保守性を意識
-
-利用者さんの検索にヒットしやすい様にListで記入
+<br><br>利用者さんの検索にヒットしやすい様にListで記入
 
 【構成】
 src-main-java/com/example/magic-controller
