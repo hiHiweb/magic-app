@@ -12,6 +12,7 @@
 - Spring Boot
 - Spring MVC
 - Thymeleaf
+- Spring Web
 - HTML 
 
 【機能】
