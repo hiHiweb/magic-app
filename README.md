@@ -7,7 +7,7 @@
 <br>-「花」→ 花畑を出す魔法
 
 【使用技術】
-- Java
+<br>- Java
 <br>- Spring Boot
 <br>- Spring MVC
 <br>- Thymeleaf
