@@ -4,15 +4,7 @@
 日常の困りごとを入力すると、独自のキーワードマッチングにより、最適な魔法をレコメンドします。
 例：
 <br>-「掃除」→カビを消滅させる魔法
-<br>-「花」→ 花畑を出す魔法
-
-【使用技術】
-<br>- Java
-<br>- Spring Boot
-<br>- Spring MVC
-<br>- Thymeleaf
-<br>- Spring Web
-<br>- HTML 
+<br>-「花」→ 花畑を出す魔法 
 
 【機能】
 <br>-キーワード入力による魔法の提案
@@ -21,6 +13,14 @@
 【工夫した点】
 <br><br>-Controller Service Modelを分けて保守性を意識
 <br><br>-利用者さんの検索にヒットしやすい様にListで記入
+
+【使用技術】
+<br>- Java
+<br>- Spring Boot
+<br>- Spring MVC
+<br>- Thymeleaf
+<br>- Spring Web
+<br>- HTML
 
 【構成】
 ```text
