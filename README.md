@@ -8,18 +8,19 @@
 
 【使用技術】
 - Java
-- Spring Boot
-- Spring MVC
-- Thymeleaf
-- Spring Web
-- HTML 
+<br>- Spring Boot
+<br>- Spring MVC
+<br>- Thymeleaf
+<br>- Spring Web
+<br>- HTML 
 
 【機能】
 -キーワード入力による魔法の提案
--キーワードマッチング:入力テキストとMagicService 内に保持された魔法リストが持つキーワードをマッチングさせる。
+<br>-キーワードマッチング:入力テキストとMagicService 内に保持された魔法リストが持つキーワードをマッチングさせる。
 
 【工夫した点】
-<br><br>Controller Service Modelを分けて保守性を意識<br><br>利用者さんの検索にヒットしやすい様にListで記入
+<br><br>-Controller Service Modelを分けて保守性を意識
+<br><br>-利用者さんの検索にヒットしやすい様にListで記入
 
 【構成】
 ```text
