@@ -22,8 +22,16 @@
 <br><br>Controller Service Modelを分けて保守性を意識<br><br>利用者さんの検索にヒットしやすい様にListで記入
 
 【構成】
-src-main-java/com/example/magic-controller
-                               -service
-                               -Model
-                               -MagicApplication
-src/main/resources/templates/result.html
+```text
+src/main/java/com/example/cigarette
+├── MagicApplication.java
+├── controller
+│   └── MagicController.java
+├── model
+│   └── Magic.java
+├── service
+│   └── MagicService.java
+
+src/main/resources/templates
+├── result.html
+```
