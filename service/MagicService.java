@@ -30,6 +30,9 @@ magicList.add(new Magic("高速で移動する魔法<br><br>早く帰れる、�
 magicList.add(new Magic("高速で移動する魔法<br><br>有給の節約できる",Arrays.asList("旅行","有給")));
 magicList.add(new Magic("甘い葡萄を酸っぱい葡萄に変える魔法<br><br>酸っぱい状態で寝れる人は少ないでしょう",Arrays.asList("眠い","眠気","ねむい")));}
 public String recommend(String input) {String lowerInput=input.toLowerCase();
-for(Magic magic:magicList) {for(String keyword:magic.getKeywords()) {if(lowerInput.contains(keyword.toLowerCase())) {return magic.getName();}}}
+for(Magic magic:magicList) {
+  for(String keyword:magic.getKeywords()) {
+    if(lowerInput.contains(keyword.toLowerCase())) {
+      return magic.getName();}}}
 return"なし";
 }}
