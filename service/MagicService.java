@@ -29,10 +29,19 @@ magicList.add(new Magic("服が透けて見える魔法<br><br>いつでもT.M R
 magicList.add(new Magic("高速で移動する魔法<br><br>早く帰れる、遅刻を免れられるかもしれない、「早すぎて見えない」が実現できる",Arrays.asList("帰","帰宅","遅刻")));
 magicList.add(new Magic("高速で移動する魔法<br><br>有給の節約できる",Arrays.asList("旅行","有給")));
 magicList.add(new Magic("甘い葡萄を酸っぱい葡萄に変える魔法<br><br>酸っぱい状態で寝れる人は少ないでしょう",Arrays.asList("眠い","眠気","ねむい")));}
-public String recommend(String input) {String lowerInput=input.toLowerCase();
-for(Magic magic:magicList) {
-  for(String keyword:magic.getKeywords()) {
-    if(lowerInput.contains(keyword.toLowerCase())) {
-      return magic.getName();}}}
-return"なし";
+public String recommend(String input) {
+    String lowerInput = input.toLowerCase();
+
+    for (Magic magic : magicList) {
+        for (String keyword : magic.getKeywords()) {
+            String lowerKeyword = keyword.toLowerCase();
+
+            if (lowerInput.contains(lowerKeyword)
+                    || lowerKeyword.contains(lowerInput)) {
+                return magic.getName();
+            }
+        }
+    }
+
+    return "なし";
 }}
